@@ -1,17 +1,15 @@
 ﻿@page "/months"
-@using Modeles
+@using Modeles;
+@using Models.Types;
 
 <table class="table table-striped">
-    @foreach (var row in DateTime.UtcNow.GetDecadeMonths().GroupBy(pair => pair.year))
+    @foreach (Year year in DateTime.UtcNow.ToYear().Decade)
     {
         <tr>
-            @foreach (var (year, month) in row)
+            <th>@year.Number</th>
+            @foreach (Month month in year.Months)
             {
-                if (month == 1)
-                {
-                    <th>@year</th>
-                }
-                <td>@($"{this.MonthsNames[month]}")</td>
+                <td>@($"{this.MonthsNames[month.Ordinal]}")</td>
             }
         </tr>
     }

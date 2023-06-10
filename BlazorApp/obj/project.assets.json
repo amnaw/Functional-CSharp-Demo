@@ -33,11 +33,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\amina\\desktop\\C#\\learning projects\\FunctionalC#\\BlazorApp\\BlazorApp.csproj",
+      "projectUniqueName": "C:\\Users\\amina\\Desktop\\C#\\learning projects\\FunctionalC#\\BlazorApp\\BlazorApp.csproj",
       "projectName": "BlazorApp",
-      "projectPath": "C:\\Users\\amina\\desktop\\C#\\learning projects\\FunctionalC#\\BlazorApp\\BlazorApp.csproj",
+      "projectPath": "C:\\Users\\amina\\Desktop\\C#\\learning projects\\FunctionalC#\\BlazorApp\\BlazorApp.csproj",
       "packagesPath": "C:\\Users\\amina\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\amina\\desktop\\C#\\learning projects\\FunctionalC#\\BlazorApp\\obj\\",
+      "outputPath": "C:\\Users\\amina\\Desktop\\C#\\learning projects\\FunctionalC#\\BlazorApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -58,8 +58,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\amina\\desktop\\C#\\learning projects\\FunctionalC#\\Models\\Models.csproj": {
-              "projectPath": "C:\\Users\\amina\\desktop\\C#\\learning projects\\FunctionalC#\\Models\\Models.csproj"
+            "C:\\Users\\amina\\Desktop\\C#\\learning projects\\FunctionalC#\\Models\\Models.csproj": {
+              "projectPath": "C:\\Users\\amina\\Desktop\\C#\\learning projects\\FunctionalC#\\Models\\Models.csproj"
             }
           }
         }
