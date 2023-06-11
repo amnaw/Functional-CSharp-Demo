@@ -1,5 +1,6 @@
 ﻿@page "/"
 @using Models.Types;
+@using Models.Services.Media;
 @using Application.Presistence;
 @inject IReadOnlyRepository<Part> PartsRepo;
 
@@ -14,6 +15,7 @@
         <th>#</th>
         <th>Name</th>
         <th>SKU</th>
+        <th>Barcode</th>
      </tr>
         @foreach (Part part in AllParts)
         {
@@ -21,6 +23,7 @@
                 <th>@(++oridinal)</th>
                 <td>@part.Name</td>
                 <td>@part.Sku.Value</td>
+                <td><img src="data:@part.Sku.ToCode39(25).EncodeBase64().Content"></td>
             </tr>
         }
    
