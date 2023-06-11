@@ -1,66 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {
-      "Application/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/Application.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Application.dll": {}
-        }
-      },
-      "Models/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/Models.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Models.dll": {}
-        }
-      },
-      "TestPresistence/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "Application": "1.0.0",
-          "Models": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/TestPresistence.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/TestPresistence.dll": {}
-        }
-      }
-    }
+    "net6.0": {}
   },
-  "libraries": {
-    "Application/1.0.0": {
-      "type": "project",
-      "path": "../Application/Application.csproj",
-      "msbuildProject": "../Application/Application.csproj"
-    },
-    "Models/1.0.0": {
-      "type": "project",
-      "path": "../Models/Models.csproj",
-      "msbuildProject": "../Models/Models.csproj"
-    },
-    "TestPresistence/1.0.0": {
-      "type": "project",
-      "path": "../TestPresistence/TestPresistence.csproj",
-      "msbuildProject": "../TestPresistence/TestPresistence.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net6.0": [
-      "Application >= 1.0.0",
-      "Models >= 1.0.0",
-      "TestPresistence >= 1.0.0"
-    ]
+    "net6.0": []
   },
   "packageFolders": {
     "C:\\Users\\amina\\.nuget\\packages\\": {},
@@ -87,8 +32,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://nuget.telerik.com/nuget": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
@@ -137,5 +81,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Unable to load the service index for source https://api.nuget.org/v3/index.json.",
+      "libraryId": "SkiaSharp"
+    }
+  ]
 }

@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "xeb1woULC5Pd8d2NuaNUOc/Upn2WXyMOut5HG2ouWCU+E+CCtRCBNXycfQHc8VCE6Mhy7ypqthA1lGWjb+jM6g==",
-  "success": true,
+  "dgSpecHash": "VBZO9gLIhGC8G6Vp8/eHYl7UxVE4qhJ3ZNtLUTNOWWJ5DpDf0MxQHqxYBfsh2tPEQLpYByNBtk+dY9abjyHOZg==",
+  "success": false,
   "projectFilePath": "C:\\Users\\amina\\Desktop\\C#\\learning projects\\FunctionalC#\\Models\\Models.csproj",
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Unable to load the service index for source https://api.nuget.org/v3/index.json.",
+      "libraryId": "SkiaSharp"
+    }
+  ]
 }

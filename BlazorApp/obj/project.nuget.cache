@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "dB0Gsj+e59tC1ez4J3ZhnkobFvrvDa9bCMjYXzHhO87zEC2EDD7JvZhQE1anuPsgIbESESRec3I2MEVhF4j7Gw==",
-  "success": true,
+  "dgSpecHash": "u9k8XzxJaPZyMOU6axs7u37/3zqcuplCooOPMkEacr70ayfhPqxhfvPc5d+ohufxIgQDNroo0eEjg5ecq0M6/w==",
+  "success": false,
   "projectFilePath": "C:\\Users\\amina\\Desktop\\C#\\learning projects\\FunctionalC#\\BlazorApp\\BlazorApp.csproj",
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Unable to load the service index for source https://api.nuget.org/v3/index.json.",
+      "libraryId": "SkiaSharp"
+    }
+  ]
 }
