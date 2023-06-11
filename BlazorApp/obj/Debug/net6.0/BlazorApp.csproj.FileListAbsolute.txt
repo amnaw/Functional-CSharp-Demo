@@ -33,3 +33,7 @@ C:\Users\amina\Desktop\C#\learning projects\FunctionalC#\BlazorApp\obj\Debug\net
 C:\Users\amina\Desktop\C#\learning projects\FunctionalC#\BlazorApp\obj\Debug\net6.0\BlazorApp.pdb
 C:\Users\amina\Desktop\C#\learning projects\FunctionalC#\BlazorApp\obj\Debug\net6.0\BlazorApp.genruntimeconfig.cache
 C:\Users\amina\Desktop\C#\learning projects\FunctionalC#\BlazorApp\obj\Debug\net6.0\ref\BlazorApp.dll
+C:\Users\amina\Desktop\C#\learning projects\FunctionalC#\BlazorApp\bin\Debug\net6.0\Application.dll
+C:\Users\amina\Desktop\C#\learning projects\FunctionalC#\BlazorApp\bin\Debug\net6.0\TestPresistence.dll
+C:\Users\amina\Desktop\C#\learning projects\FunctionalC#\BlazorApp\bin\Debug\net6.0\Application.pdb
+C:\Users\amina\Desktop\C#\learning projects\FunctionalC#\BlazorApp\bin\Debug\net6.0\TestPresistence.pdb

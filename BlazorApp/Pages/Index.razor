@@ -1,9 +1,35 @@
 ﻿@page "/"
+@using Models.Types;
+@using Application.Presistence;
+@inject IReadOnlyRepository<Part> PartsRepo;
 
-<PageTitle>Index</PageTitle>
+<PageTitle>Home Page</PageTitle>
+<table class="table table-striped">
 
-<h1>Hello, world!</h1>
-
-Welcome to your new app.
+    @{
+        int oridinal = 0;
+        AllParts = PartsRepo.GetAll().ToList();
+    }
+    <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>SKU</th>
+     </tr>
+        @foreach (Part part in AllParts)
+        {
+            <tr>
+                <th>@(++oridinal)</th>
+                <td>@part.Name</td>
+                <td>@part.Sku.Value</td>
+            </tr>
+        }
+   
+</table>
 
 <SurveyPrompt Title="How is Blazor working for you?" />
+
+    @code {
+    [Parameter]
+    public IEnumerable<Part> AllParts { get; set; } = Enumerable.Empty<Part>();
+
+}

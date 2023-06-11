@@ -2,6 +2,16 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Application.dll": {}
+        }
+      },
       "Models/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -11,19 +21,45 @@
         "runtime": {
           "bin/placeholder/Models.dll": {}
         }
+      },
+      "TestPresistence/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Application": "1.0.0",
+          "Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TestPresistence.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TestPresistence.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "Application/1.0.0": {
+      "type": "project",
+      "path": "../Application/Application.csproj",
+      "msbuildProject": "../Application/Application.csproj"
+    },
     "Models/1.0.0": {
       "type": "project",
       "path": "../Models/Models.csproj",
       "msbuildProject": "../Models/Models.csproj"
+    },
+    "TestPresistence/1.0.0": {
+      "type": "project",
+      "path": "../TestPresistence/TestPresistence.csproj",
+      "msbuildProject": "../TestPresistence/TestPresistence.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Models >= 1.0.0"
+      "Application >= 1.0.0",
+      "Models >= 1.0.0",
+      "TestPresistence >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -58,8 +94,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\Users\\amina\\Desktop\\C#\\learning projects\\FunctionalC#\\Application\\Application.csproj": {
+              "projectPath": "C:\\Users\\amina\\Desktop\\C#\\learning projects\\FunctionalC#\\Application\\Application.csproj"
+            },
             "C:\\Users\\amina\\Desktop\\C#\\learning projects\\FunctionalC#\\Models\\Models.csproj": {
               "projectPath": "C:\\Users\\amina\\Desktop\\C#\\learning projects\\FunctionalC#\\Models\\Models.csproj"
+            },
+            "C:\\Users\\amina\\Desktop\\C#\\learning projects\\FunctionalC#\\TestPresistence\\TestPresistence.csproj": {
+              "projectPath": "C:\\Users\\amina\\Desktop\\C#\\learning projects\\FunctionalC#\\TestPresistence\\TestPresistence.csproj"
             }
           }
         }
